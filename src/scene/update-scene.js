@@ -14,6 +14,7 @@ export default function updateScene(scene, state, material) {
 
     function createGraphArray() {
 
+
         const
             parts = 40,
             umin = 0,
