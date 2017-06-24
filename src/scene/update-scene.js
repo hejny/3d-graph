@@ -12,6 +12,7 @@ export default function updateScene(scene, state, material) {
     //const countPoint = null;
     //console.log(state,countPoint);
 
+
     function createGraphArray() {
 
 
