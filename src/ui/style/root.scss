@@ -9,7 +9,7 @@ html, body{
 
 #scene {
   width: 100vw;
-  height: 100vh;
+  height: calc( 100vh - 50px) ;
   touch-action: none;
 
 
@@ -18,8 +18,10 @@ html, body{
 
 .editor {
   textarea {
+    background-color: black;
+    color: white;
     width: 100vw;
-    height: 100vh;
+    height: 400px;
     padding: 5px;
   }
 
