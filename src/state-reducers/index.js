@@ -1,9 +1,7 @@
 import { combineReducers } from 'redux'
-import blocks from './blocks'
-import palette from './palette'
+import countPoint from './count-point'
 
 
 export default combineReducers({
-    blocks,
-    palette
+    countPoint,
 })

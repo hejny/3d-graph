@@ -1,5 +1,5 @@
 import * as React from "react";
-import Heading from './heading';
+import Editor from './editor';
 
 
 import './style/root.scss';
@@ -12,30 +12,7 @@ export default function Root() {
         <div className="root">
 
 
-            <nav className="top">
-                <div className="left">
-                    <Heading/>
-
-
-                    aaaaaa
-                </div>
-                {/*<ul>
-                    <li>Menu 1</li>
-                    <li>Menu 2</li>
-                    <li>Menu 3</li>
-                </ul>
-                <div className="right">
-
-                    <button>Uložit</button>
-
-                </div>*/}
-            </nav>
-
-
-
-            <footer>
-                footer
-            </footer>
+            <Editor/>
 
 
         </div>

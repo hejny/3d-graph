@@ -1,16 +1,13 @@
-body{
+html, body{
     //z-index: 1;
     font-family: "Trebuchet MS", Helvetica, sans-serif;
 
-  background-color: bisque;
+  margin: 0;
+  padding: 0;
 }
 
 
 #scene {
-  z-index: 1;
-  position: fixed;
-  top: 0;
-  left: 0;
   width: 100vw;
   height: 100vh;
   touch-action: none;
@@ -19,15 +16,11 @@ body{
 }
 
 
-#score {
-  z-index: 2;
-  position: fixed;
-  top: 0;
-  right: 0;
-  touch-action: none;
-  font-size: 2em;
-
-  padding: 5px;
-
+.editor {
+  textarea {
+    width: 100vw;
+    height: 100vh;
+    padding: 5px;
+  }
 
 }

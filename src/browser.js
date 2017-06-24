@@ -8,7 +8,6 @@ import createStateFromUri from './state/create-state-from-uri';
 import createTitleFromState from './state/create-title-from-state';
 import createUriFromState from './state/create-uri-from-state';
 import createScene from './scene/create-scene';
-import updateScene from './scene/update-scene';
 import stateReducer from './state-reducers/index';
 import wrapReducer from './util-functions/wrap-reducer';
 import Root from './ui/root';
@@ -26,9 +25,6 @@ window.addEventListener("resize", function () {
     engine.resize();
 });
 
-function render() {
-    updateScene(scene, store.getState());
-}
 
 function initializeStore() {
     store = createStore(wrapReducer(stateReducer), createStateFromUri(document.location.toString()));
@@ -39,8 +35,7 @@ function initializeStore() {
         document.title = title;
         history.pushState({}, title, uri);
     });
-    store.subscribe(render);
-    render();
+
 
 
     ReactDOM.render(
