@@ -1,7 +1,7 @@
 import * as BABYLON from 'babylonjs';
 
 export default function updateScene(scene, state, material) {
-    console.log('updateScene');
+    //console.log('updateScene');
 
     scene.meshes.forEach((mesh) => {
         mesh.dispose();
@@ -10,7 +10,7 @@ export default function updateScene(scene, state, material) {
 
     const countPoint = eval(state.countPoint);
     //const countPoint = null;
-    console.log(state,countPoint);
+    //console.log(state,countPoint);
 
     function createGraphArray() {
 
