@@ -8,8 +8,12 @@ html, body{
 
 
 #scene {
+  z-index: 1;
+  position: fixed;
+  top: 0;
+  left:0;
   width: 100vw;
-  height: calc( 100vh - 50px) ;
+  height: 100vh;
   touch-action: none;
 
 
@@ -17,9 +21,17 @@ html, body{
 
 
 .editor {
+  position: absolute;
+  z-index: 2;
+  pointer-events: none;
+
+
+
   textarea {
-    background-color: black;
+    pointer-events: auto;
+    background-color: rgba(0, 0, 0, 0.75);
     color: white;
+    margin-top: calc(100vh - 10vh);
     width: 100vw;
     height: 400px;
     padding: 5px;
