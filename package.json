@@ -1,6 +1,6 @@
 {
-  "name": "3d-snake",
-  "homepage": "https://hejny.github.io/3d-snake",
+  "name": "3d-graph",
+  "homepage": "https://hejny.github.io/3d-graph",
   "version": "0.6.0",
   "private": true,
   "dependencies": {
